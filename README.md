@@ -1,3 +1,23 @@
+#Flies and Folders
+
+- Data : Contains all downloaded data
+
+- models : Contains trained pickled models, and their hyperparameters json files
+
+- Downloading_data.ipynb : Code for downloading data
+
+- Unzipping_data.ipynb : Code for unzipping downloaded data
+
+- BrainAge_FeatureExtraction.ipynb (Most important part of the repo) : Code for feature-extraction
+
+- BrainAge_Prediction.ipynb (Second most important part of the repo) : Code for making test predictions
+
+- env.yml : Used for setting up envioronment (Required for the feature-extraction and prediction notebooks)
+
+- feature_extraction_info.json : Required for the prediction notebook
+
+- df_submission.zip : Final phase-2 test data predictions
+
 # Setting up environment
 
 Use the terminal or an Anaconda Prompt for the following steps:
@@ -15,12 +35,12 @@ conda activate brain_age
 conda env list
 ```
 # Downloading data
-The notebook **downloading_data.ipynb** is used to download the training data, phase-1 test data, starter kit, ands phase-2 test data.
+The notebook **downloading_data** is used to download the training data, phase-1 test data, starter kit, ands phase-2 test data.
 
 The notebook **unzipping_data** is used to unzip all the downloaded data inside the **/Data** folder
 
 # Feature extraction
-The notebook **BrainAge_FeatureExtraction.ipynb** is used to load the downloaded train and test datasets, and calculate features for training & pediction.
+The notebook **BrainAge_FeatureExtraction** is used to load the downloaded train and test datasets, and calculate features for training & pediction.
 
 All the data is then extracted, cropped, resampled, and filtered. Both 'Eyes closed (EC)' and 'Eyes Open (EO)' data is used. The 'Cz' channel data is ignored.
 
@@ -50,7 +70,9 @@ In both EO and EC cases, autoML found two ensemble models to best fit the respec
 
 # Predictions on test data
  
- Two predictions are made - one from model fitted over EC data, one from model fitted over EO data. Since the sliding window was also applied to the test data, we will have multiple predictions for each test subject. 
+ Two predictions are made - one from model fitted over EC data, one from model fitted over EO data. Refer the **BrainAge_Prediction** notebook
+ 
+ Since the sliding window was also applied to the test data, we will have multiple predictions for each test subject. 
  
  There were 9 windows extracted per subject from their EC data, and 6 from their EO data. So, we average over the 9 predictions to get a single prediction per test subject. Similarly, the 6 predictions are averaged for every test subject.
  
