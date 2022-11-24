@@ -1,0 +1,236 @@
+{
+    "model_1": {
+        "data_transformation": {
+            "class_name": "MinMaxScaler",
+            "module": "sklearn.preprocessing",
+            "param_args": [],
+            "param_kwargs": {},
+            "prepared_kwargs": {},
+            "spec_class": "preproc"
+        },
+        "ensemble_weight": 0.07692307692307693,
+        "training_algorithm": {
+            "class_name": "LightGBMRegressor",
+            "module": "automl.client.core.common.model_wrappers",
+            "param_args": [],
+            "param_kwargs": {
+                "boosting_type": "gbdt",
+                "colsample_bytree": 0.7000000000000001,
+                "learning_rate": 0.08421631578947368,
+                "max_bin": 63,
+                "max_depth": 10,
+                "min_data_in_leaf": 0.005329721494687789,
+                "min_split_gain": 0.7368421052631579,
+                "n_estimators": 100,
+                "num_leaves": 7,
+                "reg_alpha": 0.825,
+                "reg_lambda": 1.2,
+                "subsample": 0.85,
+                "subsample_freq": 7
+            },
+            "prepared_kwargs": {},
+            "spec_class": "sklearn"
+        }
+    },
+    "model_2": {
+        "data_transformation": {
+            "class_name": "StandardScaler",
+            "module": "sklearn.preprocessing",
+            "param_args": [],
+            "param_kwargs": {
+                "with_mean": false,
+                "with_std": false
+            },
+            "prepared_kwargs": {},
+            "spec_class": "preproc"
+        },
+        "ensemble_weight": 0.23076923076923078,
+        "training_algorithm": {
+            "class_name": "LightGBMRegressor",
+            "module": "automl.client.core.common.model_wrappers",
+            "param_args": [],
+            "param_kwargs": {
+                "boosting_type": "gbdt",
+                "colsample_bytree": 0.7000000000000001,
+                "learning_rate": 0.14737105263157896,
+                "max_bin": 63,
+                "max_depth": 8,
+                "min_data_in_leaf": 0.05545979934471994,
+                "min_split_gain": 0.3684210526315789,
+                "n_estimators": 600,
+                "num_leaves": 7,
+                "reg_alpha": 0.525,
+                "reg_lambda": 0.6749999999999999,
+                "subsample": 0.7999999999999999,
+                "subsample_freq": 2
+            },
+            "prepared_kwargs": {},
+            "spec_class": "sklearn"
+        }
+    },
+    "model_3": {
+        "data_transformation": {
+            "class_name": "StandardScaler",
+            "module": "sklearn.preprocessing",
+            "param_args": [],
+            "param_kwargs": {
+                "with_mean": false,
+                "with_std": false
+            },
+            "prepared_kwargs": {},
+            "spec_class": "preproc"
+        },
+        "ensemble_weight": 0.07692307692307693,
+        "training_algorithm": {
+            "class_name": "LightGBMRegressor",
+            "module": "automl.client.core.common.model_wrappers",
+            "param_args": [],
+            "param_kwargs": {
+                "boosting_type": "gbdt",
+                "colsample_bytree": 0.4,
+                "learning_rate": 0.11579368421052631,
+                "max_bin": 1023,
+                "max_depth": 6,
+                "min_data_in_leaf": 0.06556026595768968,
+                "min_split_gain": 0.3684210526315789,
+                "n_estimators": 100,
+                "num_leaves": 15,
+                "reg_alpha": 0.6,
+                "reg_lambda": 0,
+                "subsample": 0.95,
+                "subsample_freq": 7
+            },
+            "prepared_kwargs": {},
+            "spec_class": "sklearn"
+        }
+    },
+    "model_4": {
+        "data_transformation": {
+            "class_name": "StandardScaler",
+            "module": "sklearn.preprocessing",
+            "param_args": [],
+            "param_kwargs": {
+                "with_mean": false,
+                "with_std": false
+            },
+            "prepared_kwargs": {},
+            "spec_class": "preproc"
+        },
+        "ensemble_weight": 0.23076923076923078,
+        "training_algorithm": {
+            "class_name": "LightGBMRegressor",
+            "module": "automl.client.core.common.model_wrappers",
+            "param_args": [],
+            "param_kwargs": {
+                "boosting_type": "gbdt",
+                "colsample_bytree": 1,
+                "learning_rate": 0.1052678947368421,
+                "max_bin": 63,
+                "max_depth": 3,
+                "min_data_in_leaf": 0.06556026595768968,
+                "min_split_gain": 0.3157894736842105,
+                "n_estimators": 200,
+                "num_leaves": 7,
+                "reg_alpha": 0.525,
+                "reg_lambda": 1.05,
+                "subsample": 0.85,
+                "subsample_freq": 2
+            },
+            "prepared_kwargs": {},
+            "spec_class": "sklearn"
+        }
+    },
+    "model_5": {
+        "data_transformation": {
+            "class_name": "MaxAbsScaler",
+            "module": "sklearn.preprocessing",
+            "param_args": [],
+            "param_kwargs": {},
+            "prepared_kwargs": {},
+            "spec_class": "preproc"
+        },
+        "ensemble_weight": 0.07692307692307693,
+        "training_algorithm": {
+            "class_name": "ExtraTreesRegressor",
+            "module": "sklearn.ensemble",
+            "param_args": [],
+            "param_kwargs": {
+                "bootstrap": false,
+                "criterion": "mse",
+                "max_features": 0.8,
+                "min_samples_leaf": 0.0023646822772690063,
+                "min_samples_split": 0.005285388593079247,
+                "n_estimators": 10
+            },
+            "prepared_kwargs": {},
+            "spec_class": "sklearn"
+        }
+    },
+    "model_6": {
+        "data_transformation": {
+            "class_name": "MaxAbsScaler",
+            "module": "sklearn.preprocessing",
+            "param_args": [],
+            "param_kwargs": {},
+            "prepared_kwargs": {},
+            "spec_class": "preproc"
+        },
+        "ensemble_weight": 0.15384615384615385,
+        "training_algorithm": {
+            "class_name": "ElasticNet",
+            "module": "sklearn.linear_model",
+            "param_args": [],
+            "param_kwargs": {
+                "alpha": 0.001,
+                "l1_ratio": 1,
+                "normalize": false
+            },
+            "prepared_kwargs": {},
+            "spec_class": "sklearn"
+        }
+    },
+    "model_7": {
+        "data_transformation": {
+            "class_name": "MinMaxScaler",
+            "module": "sklearn.preprocessing",
+            "param_args": [],
+            "param_kwargs": {},
+            "prepared_kwargs": {},
+            "spec_class": "preproc"
+        },
+        "ensemble_weight": 0.07692307692307693,
+        "training_algorithm": {
+            "class_name": "ElasticNet",
+            "module": "sklearn.linear_model",
+            "param_args": [],
+            "param_kwargs": {
+                "alpha": 0.001,
+                "l1_ratio": 0.8436842105263158,
+                "normalize": false
+            },
+            "prepared_kwargs": {},
+            "spec_class": "sklearn"
+        }
+    },
+    "model_8": {
+        "data_transformation": {
+            "class_name": "MaxAbsScaler",
+            "module": "sklearn.preprocessing",
+            "param_args": [],
+            "param_kwargs": {},
+            "prepared_kwargs": {},
+            "spec_class": "preproc"
+        },
+        "ensemble_weight": 0.07692307692307693,
+        "training_algorithm": {
+            "class_name": "LightGBMRegressor",
+            "module": "automl.client.core.common.model_wrappers",
+            "param_args": [],
+            "param_kwargs": {
+                "min_data_in_leaf": 20
+            },
+            "prepared_kwargs": {},
+            "spec_class": "sklearn"
+        }
+    }
+}

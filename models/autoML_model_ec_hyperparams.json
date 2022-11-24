@@ -1,0 +1,317 @@
+{
+    "model_1": {
+        "data_transformation": {
+            "class_name": "StandardScaler",
+            "module": "sklearn.preprocessing",
+            "param_args": [],
+            "param_kwargs": {
+                "with_mean": true,
+                "with_std": false
+            },
+            "prepared_kwargs": {},
+            "spec_class": "preproc"
+        },
+        "ensemble_weight": 0.06666666666666667,
+        "training_algorithm": {
+            "class_name": "LightGBMRegressor",
+            "module": "automl.client.core.common.model_wrappers",
+            "param_args": [],
+            "param_kwargs": {
+                "boosting_type": "gbdt",
+                "colsample_bytree": 0.9,
+                "learning_rate": 0.15789684210526317,
+                "max_bin": 255,
+                "max_depth": 10,
+                "min_data_in_leaf": 0.09161477771149525,
+                "min_split_gain": 0.10526315789473684,
+                "n_estimators": 400,
+                "num_leaves": 15,
+                "reg_alpha": 1.05,
+                "reg_lambda": 0.8999999999999999,
+                "subsample": 0.95,
+                "subsample_freq": 3
+            },
+            "prepared_kwargs": {},
+            "spec_class": "sklearn"
+        }
+    },
+    "model_10": {
+        "data_transformation": {
+            "class_name": "MaxAbsScaler",
+            "module": "sklearn.preprocessing",
+            "param_args": [],
+            "param_kwargs": {},
+            "prepared_kwargs": {},
+            "spec_class": "preproc"
+        },
+        "ensemble_weight": 0.06666666666666667,
+        "training_algorithm": {
+            "class_name": "LightGBMRegressor",
+            "module": "automl.client.core.common.model_wrappers",
+            "param_args": [],
+            "param_kwargs": {
+                "min_data_in_leaf": 20
+            },
+            "prepared_kwargs": {},
+            "spec_class": "sklearn"
+        }
+    },
+    "model_2": {
+        "data_transformation": {
+            "class_name": "StandardScaler",
+            "module": "sklearn.preprocessing",
+            "param_args": [],
+            "param_kwargs": {
+                "with_mean": true,
+                "with_std": true
+            },
+            "prepared_kwargs": {},
+            "spec_class": "preproc"
+        },
+        "ensemble_weight": 0.13333333333333333,
+        "training_algorithm": {
+            "class_name": "LightGBMRegressor",
+            "module": "automl.client.core.common.model_wrappers",
+            "param_args": [],
+            "param_kwargs": {
+                "boosting_type": "gbdt",
+                "colsample_bytree": 1,
+                "learning_rate": 0.14737105263157896,
+                "max_bin": 63,
+                "max_depth": 7,
+                "min_data_in_leaf": 0.004508604111664011,
+                "min_split_gain": 0.5263157894736842,
+                "n_estimators": 100,
+                "num_leaves": 63,
+                "reg_alpha": 0.075,
+                "reg_lambda": 0.3,
+                "subsample": 0.6,
+                "subsample_freq": 3
+            },
+            "prepared_kwargs": {},
+            "spec_class": "sklearn"
+        }
+    },
+    "model_3": {
+        "data_transformation": {
+            "class_name": "StandardScaler",
+            "module": "sklearn.preprocessing",
+            "param_args": [],
+            "param_kwargs": {
+                "with_mean": false,
+                "with_std": false
+            },
+            "prepared_kwargs": {},
+            "spec_class": "preproc"
+        },
+        "ensemble_weight": 0.06666666666666667,
+        "training_algorithm": {
+            "class_name": "XGBoostRegressor",
+            "module": "automl.client.core.common.model_wrappers",
+            "param_args": [],
+            "param_kwargs": {
+                "booster": "gbtree",
+                "colsample_bylevel": 0.5,
+                "colsample_bytree": 1,
+                "eta": 0.3,
+                "gamma": 0,
+                "grow_policy": "lossguide",
+                "max_bin": 1023,
+                "max_depth": 10,
+                "max_leaves": 63,
+                "n_estimators": 600,
+                "objective": "reg:linear",
+                "reg_alpha": 0.7291666666666667,
+                "reg_lambda": 0,
+                "subsample": 1,
+                "tree_method": "hist"
+            },
+            "prepared_kwargs": {},
+            "spec_class": "sklearn"
+        }
+    },
+    "model_4": {
+        "data_transformation": {
+            "class_name": "MinMaxScaler",
+            "module": "sklearn.preprocessing",
+            "param_args": [],
+            "param_kwargs": {},
+            "prepared_kwargs": {},
+            "spec_class": "preproc"
+        },
+        "ensemble_weight": 0.06666666666666667,
+        "training_algorithm": {
+            "class_name": "LightGBMRegressor",
+            "module": "automl.client.core.common.model_wrappers",
+            "param_args": [],
+            "param_kwargs": {
+                "boosting_type": "gbdt",
+                "colsample_bytree": 0.8,
+                "learning_rate": 0.07369052631578947,
+                "max_bin": 63,
+                "max_depth": 9,
+                "min_data_in_leaf": 0.001953125,
+                "min_split_gain": 0.10526315789473684,
+                "n_estimators": 800,
+                "num_leaves": 31,
+                "reg_alpha": 0.3,
+                "reg_lambda": 0.75,
+                "subsample": 0.1,
+                "subsample_freq": 0
+            },
+            "prepared_kwargs": {},
+            "spec_class": "sklearn"
+        }
+    },
+    "model_5": {
+        "data_transformation": {
+            "class_name": "StandardScaler",
+            "module": "sklearn.preprocessing",
+            "param_args": [],
+            "param_kwargs": {
+                "with_mean": true,
+                "with_std": false
+            },
+            "prepared_kwargs": {},
+            "spec_class": "preproc"
+        },
+        "ensemble_weight": 0.13333333333333333,
+        "training_algorithm": {
+            "class_name": "LightGBMRegressor",
+            "module": "automl.client.core.common.model_wrappers",
+            "param_args": [],
+            "param_kwargs": {
+                "boosting_type": "gbdt",
+                "colsample_bytree": 1,
+                "learning_rate": 0.1894742105263158,
+                "max_bin": 1023,
+                "max_depth": 3,
+                "min_data_in_leaf": 0.1513396657452164,
+                "min_split_gain": 0.7894736842105263,
+                "n_estimators": 400,
+                "num_leaves": 7,
+                "reg_alpha": 0.8999999999999999,
+                "reg_lambda": 0.8999999999999999,
+                "subsample": 0.95,
+                "subsample_freq": 7
+            },
+            "prepared_kwargs": {},
+            "spec_class": "sklearn"
+        }
+    },
+    "model_6": {
+        "data_transformation": {
+            "class_name": "MinMaxScaler",
+            "module": "sklearn.preprocessing",
+            "param_args": [],
+            "param_kwargs": {},
+            "prepared_kwargs": {},
+            "spec_class": "preproc"
+        },
+        "ensemble_weight": 0.06666666666666667,
+        "training_algorithm": {
+            "class_name": "GradientBoostingRegressor",
+            "module": "sklearn.ensemble",
+            "param_args": [],
+            "param_kwargs": {
+                "alpha": 0.7000000000000001,
+                "criterion": "friedman_mse",
+                "learning_rate": 0.046415888336127774,
+                "loss": "ls",
+                "max_depth": 3,
+                "max_features": 0.5,
+                "min_samples_leaf": 0.001953125,
+                "min_samples_split": 0.031067599098338297,
+                "n_estimators": 400,
+                "subsample": 0.35
+            },
+            "prepared_kwargs": {},
+            "spec_class": "sklearn"
+        }
+    },
+    "model_7": {
+        "data_transformation": {
+            "class_name": "StandardScaler",
+            "module": "sklearn.preprocessing",
+            "param_args": [],
+            "param_kwargs": {
+                "with_mean": true,
+                "with_std": false
+            },
+            "prepared_kwargs": {},
+            "spec_class": "preproc"
+        },
+        "ensemble_weight": 0.2,
+        "training_algorithm": {
+            "class_name": "LightGBMRegressor",
+            "module": "automl.client.core.common.model_wrappers",
+            "param_args": [],
+            "param_kwargs": {
+                "boosting_type": "gbdt",
+                "colsample_bytree": 0.4,
+                "learning_rate": 0.1894742105263158,
+                "max_bin": 255,
+                "max_depth": 6,
+                "min_data_in_leaf": 0.07750025285391171,
+                "min_split_gain": 0,
+                "n_estimators": 200,
+                "num_leaves": 31,
+                "reg_alpha": 0.75,
+                "reg_lambda": 1.5,
+                "subsample": 0.25,
+                "subsample_freq": 0
+            },
+            "prepared_kwargs": {},
+            "spec_class": "sklearn"
+        }
+    },
+    "model_8": {
+        "data_transformation": {
+            "class_name": "MaxAbsScaler",
+            "module": "sklearn.preprocessing",
+            "param_args": [],
+            "param_kwargs": {},
+            "prepared_kwargs": {},
+            "spec_class": "preproc"
+        },
+        "ensemble_weight": 0.06666666666666667,
+        "training_algorithm": {
+            "class_name": "ExtraTreesRegressor",
+            "module": "sklearn.ensemble",
+            "param_args": [],
+            "param_kwargs": {
+                "bootstrap": false,
+                "criterion": "mse",
+                "max_features": 0.8,
+                "min_samples_leaf": 0.0023646822772690063,
+                "min_samples_split": 0.005285388593079247,
+                "n_estimators": 10
+            },
+            "prepared_kwargs": {},
+            "spec_class": "sklearn"
+        }
+    },
+    "model_9": {
+        "data_transformation": {
+            "class_name": "MaxAbsScaler",
+            "module": "sklearn.preprocessing",
+            "param_args": [],
+            "param_kwargs": {},
+            "prepared_kwargs": {},
+            "spec_class": "preproc"
+        },
+        "ensemble_weight": 0.13333333333333333,
+        "training_algorithm": {
+            "class_name": "ElasticNet",
+            "module": "sklearn.linear_model",
+            "param_args": [],
+            "param_kwargs": {
+                "alpha": 0.001,
+                "l1_ratio": 0.6873684210526316,
+                "normalize": false
+            },
+            "prepared_kwargs": {},
+            "spec_class": "sklearn"
+        }
+    }
+}
