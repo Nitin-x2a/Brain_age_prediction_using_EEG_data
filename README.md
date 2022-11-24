@@ -1,12 +1,10 @@
-#Flies and Folders
+# Flies and Folders
 
 - Data : Contains all downloaded data
 
 - models : Contains trained pickled models, and their hyperparameters json files
 
-- Downloading_data.ipynb : Code for downloading data
-
-- Unzipping_data.ipynb : Code for unzipping downloaded data
+- Downloading_data.ipynb : Code for downloading data, and unzipping it
 
 - BrainAge_FeatureExtraction.ipynb (Most important part of the repo) : Code for feature-extraction
 
@@ -35,9 +33,7 @@ conda activate brain_age
 conda env list
 ```
 # Downloading data
-The notebook **downloading_data** is used to download the training data, phase-1 test data, starter kit, ands phase-2 test data.
-
-The notebook **unzipping_data** is used to unzip all the downloaded data inside the **/Data** folder
+The notebook **downloading_data** is used to download the training data, phase-1 test data, starter kit, ands phase-2 test data. All the unzipped downloaded data is extracted inside the **/Data** folder
 
 # Feature extraction
 The notebook **BrainAge_FeatureExtraction** is used to load the downloaded train and test datasets, and calculate features for training & pediction.
